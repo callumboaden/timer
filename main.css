@@ -1,0 +1,87 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+body,
+input {
+  font-family: 'Nunito', sans-serif;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 72px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Circle */
+svg {
+  position: absolute;
+  pointer-events: none;
+}
+
+svg #shape {
+  fill: none;
+  stroke: red;
+  stroke-width: 4;
+}
+
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.timer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.timer .timer__duration {
+  width: 100%;
+  font-size: 72px;
+}
+
+.timer .timer__controls {
+  position: relative;
+  z-index: 99;
+}
+
+.timer .timer__controls i {
+  font-size: 28px;
+}
+/*# sourceMappingURL=main.css.map */

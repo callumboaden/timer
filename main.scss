@@ -1,0 +1,86 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button
+{
+    background: none;
+    border: none;
+
+    &:focus 
+    {
+        outline: none;
+    }
+}
+
+body,
+input
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+input 
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;    
+    text-align: center;
+    font-size: 72px;
+
+    &:focus
+    {
+        outline: none;
+    }
+}
+
+/* Circle */
+svg {
+    position: absolute;
+    pointer-events: none;
+    #shape {
+      fill: none;
+      stroke: red;
+      stroke-width: 4;
+      // transition: all 4s ease-in-out;
+    }
+  }
+
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.timer 
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .timer__duration
+    {
+        width: 100%;
+        font-size: 72px;
+    }
+
+    .timer__controls
+    {
+        position: relative;
+        z-index: 99;
+        
+        i
+        {
+            font-size: 28px;
+        }
+    }
+}
